@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+body{
+	margin:0;
+	height:100vh;
+	background-color:#eee;
+	}
+	/* *{border:1px solid black} */
+	.yinying{
+      box-shadow:rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+      rgb(0 0 0 / 14%) 0px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px
+      }
+	.flex{
+		display:flex
+	}
+	.flex1{
+		flex:1
+	}
+	.baise{
+		background-color:white
+	}
+	.column{
+		flex-direction:column
+	}
+	.mg8{
+		margin:8px
+	}
+	.mgr8{
+		margin-right:8px
+	}
+	.mgt8{
+		margin-top:8px
+	}
+	.daohang{
+		padding:10px 20px;
+      border:1px solid rgb(190,190,190);
+      font-size:14;
+      color:#666;
+	}
+</style>
+</head>
+<body class="flex">
+	<!-- 侧边栏-->
+	<div style="width:200px;z-index2" class="baise yinying">
+		<div style="padding:10px;align-itmes:center;justify-content:center;border:1px solid #999;" class="flex">
+			<img src="https://www.runoob.com/wp-content/uploads/2013/06/image-icon.png" alt="" width="40px" height="40px">
+			<div style="margin-left:10px">HTML</div>
+		</div>
+		<div>
+		    <div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+			<div class="daohang">导航</div>
+		</div>
+	</div>
+	<!-- 主区域-->
+	<div class="flex1 flex column">
+				<!-- 头部栏-->
+				<div style="height:60px;z-index1;" class="baise yinying"></div>
+				<!-- 内容栏-->
+				<div class="flex1 flex">
+		          <!-- 左区-->
+					<div style="flex:3" class="flex column mg8">
+					    <!-- 数据区-->
+ 						<div style="height:100px" class="flex">
+						    <!-- 数据块-->
+							<div class="flex1 baise yinying mgr8"></div>
+							<div class="flex1 baise yinying mgr8"></div>
+							<div class="flex1 baise yinying mgr8"></div>
+							<div class="flex1 baise yinying"></div>
+						</div>
+						<!-- 列表区-->
+						<div>
+						    <!-- 列表项-->
+							<div style="height:160px" class="baise yinying mgt8"></div>
+							<div style="height:160px" class="baise yinying mgt8"></div>
+							<div style="height:160px" class="baise yinying mgt8"></div>
+						</div>
+					</div>
+					<!-- 右区-->
+					<div style="flex:1" class="flex column mgt8 mgr8">
+					    <!-- 提示区-->
+						<div style="height:150px;" class="baise yinying"></div>
+						<!-- 消息区-->
+						<div style="height:300px;" class="baise yinying mgt8"></div>
+					</div>
+		        </div>
+	</div>
+</body>
+</html>
